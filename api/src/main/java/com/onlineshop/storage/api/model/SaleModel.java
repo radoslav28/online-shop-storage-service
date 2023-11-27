@@ -20,7 +20,7 @@ public class SaleModel {
     @UUID
     private String userId;
 
-    private ItemModel itemModel;
+    private ItemModel item;
 
     private Timestamp saleDate;
 
