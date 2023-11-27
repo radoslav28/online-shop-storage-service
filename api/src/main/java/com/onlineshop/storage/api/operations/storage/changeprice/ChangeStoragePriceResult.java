@@ -7,7 +7,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @Builder
-public class ChangePriceResult implements ProcessorResult {
+public class ChangeStoragePriceResult implements ProcessorResult {
 
     private final String message = "Priced changes successfully";
 }

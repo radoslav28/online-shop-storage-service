@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ChangePriceInput implements ProcessorInput {
+public class ChangeStoragePriceInput implements ProcessorInput {
 
     @UUID
     @NotBlank
