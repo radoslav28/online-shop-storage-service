@@ -18,5 +18,10 @@
             <artifactId>feign-jackson</artifactId>
             <version>12.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.online-shop.store</groupId>
+            <artifactId>rest-export</artifactId>
+            <version>${store.revision}</version>
+        </dependency>
     </dependencies>
 </project>
