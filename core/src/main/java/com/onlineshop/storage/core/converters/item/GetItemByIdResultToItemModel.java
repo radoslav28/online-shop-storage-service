@@ -14,9 +14,9 @@ public class GetItemByIdResultToItemModel implements Converter<GetItemByIdResult
                 .id(source.getId())
                 .title(source.getTitle())
                 .description(source.getDescription())
-                .vendorModel(source.getVendorModel())
-                .multimediaModels(source.getMultimediaModels())
-                .tagModels(source.getTagModels())
+                .vendor(source.getVendorModel())
+                .multimedia(source.getMultimediaModels())
+                .tags(source.getTagModels())
                 .build();
     }
 }
