@@ -5,6 +5,8 @@ import com.onlineshop.storage.persistence.entities.Sale;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
+import java.sql.Timestamp;
+
 @Component
 public class SaleToSaleModel implements Converter<Sale, SaleModel> {
     @Override
@@ -15,6 +17,7 @@ public class SaleToSaleModel implements Converter<Sale, SaleModel> {
                 .userId(String.valueOf(source.getUserId()))
                 .quantity(source.getQuantity())
                 .price(source.getPrice())
+                .saleDate(Timestamp.valueOf(source.getSaleDate()))
                 .build();
     }
 }

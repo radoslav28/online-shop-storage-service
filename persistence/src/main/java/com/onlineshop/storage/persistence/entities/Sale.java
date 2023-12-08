@@ -42,8 +42,7 @@ public class Sale {
     private BigDecimal price;
 
     @Builder
-    public Sale(UUID id, UUID userId, UUID itemId, Long quantity, BigDecimal price) {
-        this.id = id;
+    public Sale( UUID userId, UUID itemId, Long quantity, BigDecimal price) {
         this.userId = userId;
         this.itemId = itemId;
         this.saleDate = LocalDateTime.now(ZoneOffset.UTC);
